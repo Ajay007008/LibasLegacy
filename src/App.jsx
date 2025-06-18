@@ -8,6 +8,7 @@ import CustomCollections3 from './components/customeCollection3'
 import Tailor from './components/tailor'
 import AutoSlider from './components/autoSlider'
 import VideoPlayer from './components/videoPlayer'
+import OurStory from './components/ourStory'
 
 import './App.css'
 
@@ -25,7 +26,8 @@ function App() {
     <Hero/>
     
     <Services/>
-   
+
+   <OurStory/>
 
     <CustomCollection/>
   

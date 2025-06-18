@@ -34,7 +34,7 @@ const contactInfo = () => {
 
 {/* Contact Information */}
 <div className="flex flex-col justify-start">
-  <h2 className="text-4xl font-bold mb-6">CONTACT INFO</h2>
+  <h2 className="text-4xl font-serif font-bold mb-6">CONTACT INFO</h2>
   <p className="text-gray-600 mb-4">
     Have a question? Our team is always ready to help. Feel free to come to us anytime —
     we are glad to see you at our studio.
