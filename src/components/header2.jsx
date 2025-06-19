@@ -5,15 +5,10 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    
-
-<div className="head">
+    <div className="head">
       <div
         className="w-full min-h-screen bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${img2})` }}
@@ -34,7 +29,7 @@ const Header2 = () => {
               <Dropdown />
               <NavItem label="FEATURE" />
               <NavItem label="ABOUT" />
-              <NavItem label="NEWS" />
+              <ServicesDropdown />
               <NavItem label="SUITS" />
               <NavItem label="CONTACTS" />
             </div>
@@ -46,7 +41,20 @@ const Header2 = () => {
               <Dropdown />
               <NavItem label="FEATURE" />
               <NavItem label="ABOUT" />
-              <NavItem label="NEWS" />
+
+              {/* Services dropdown for mobile */}
+              <div>
+                <div className="font-semibold">OUR SERVICES</div>
+                <div className="pl-4 space-y-2 text-sm text-gray-300">
+                  <div>Bespoke Suits</div>
+                  <div>Tailored Trousers</div>
+                  <div>Custom Shirts</div>
+                  <div>Safari Suits</div>
+                  <div>Tuxedo Suits</div>
+                  <div>Fabrics</div>
+                </div>
+              </div>
+
               <NavItem label="SUITS" />
               <NavItem label="CONTACTS" />
             </div>
@@ -54,9 +62,10 @@ const Header2 = () => {
         </div>
       </div>
     </div>
-      
-    );
+  );
 };
+
+// === Reusable Components ===
 
 const NavItem = ({ label }) => (
   <div className="cursor-pointer hover:text-yellow-400 transition">{label}</div>
@@ -73,4 +82,18 @@ const Dropdown = () => (
   </div>
 );
 
-export default Header2
+const ServicesDropdown = () => (
+  <div className="relative group cursor-pointer">
+    <div className="hover:text-yellow-400 transition">OUR SERVICES</div>
+    <div className="absolute hidden group-hover:block mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[200px]">
+      <div className="p-3 hover:bg-gray-700">Bespoke Suits</div>
+      <div className="p-3 hover:bg-gray-700">Tailored Trousers</div>
+      <div className="p-3 hover:bg-gray-700">Custom Shirts</div>
+      <div className="p-3 hover:bg-gray-700">Safari Suits</div>
+      <div className="p-3 hover:bg-gray-700">Tuxedo Suits</div>
+      <div className="p-3 hover:bg-gray-700">Fabrics</div>
+    </div>
+  </div>
+);
+
+export default Header2;
