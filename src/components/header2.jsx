@@ -19,10 +19,12 @@ const Header2 = () => {
           {/* Top Nav */}
           <div className="flex items-center justify-between text-white">
             {/* Logo or Title */}
-            <div className="text-2xl font-bold">LIBAS LEGACY</div>
-
+            <div className="text-center">
+            <h1 className="text-xl sm:text-4xl md:text-5xl font-serif font-bold text-white">Libas Legacy</h1>  <div className="h-[1px] w-20 bg-yellow-500 mx-auto my-1" />
+  <p className="text-sm tracking-widest text-white">BESPOKE.DUBAI</p>
+</div>
             {/* Hamburger - Mobile Only */}
-            <div className="md:hidden text-2xl cursor-pointer" onClick={toggleMenu}>
+            <div className="md:hidden text-xl cursor-pointer" onClick={toggleMenu}>
               {isMenuOpen ? <FaTimes /> : <FaBars />}
             </div>
 
