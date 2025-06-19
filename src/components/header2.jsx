@@ -54,6 +54,7 @@ const Header2 = () => {
                 </div>
                 {isServicesOpen && (
                   <div className="pl-4 space-y-2 text-sm text-gray-300 mt-2">
+                    <div>Uniform</div>
                     <div>Bespoke Suits</div>
                     <div>Tailored Trousers</div>
                     <div>Custom Shirts</div>
