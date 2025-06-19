@@ -10,13 +10,18 @@ import AutoSlider from './components/autoSlider'
 import VideoPlayer from './components/videoPlayer'
 import OurStory from './components/ourStory'
 
+import Header2 from './components/header2'
+
 import './App.css'
 
 function App() {
 
   return (
   <div>
-    <Header/>
+    
+    <Header2/>
+
+
     <Tailor/>
     <VideoPlayer/>
     <CustomCollections3/>

@@ -16,7 +16,7 @@ const ourStory = () => {
      
       <p className="text-gray-600 px-3 text-center text-lg leading-relaxed max-w-xl">
         Established in 1986, our journey began with a passion for 
-        tailoring and a vision for timeless elegance. Over the decades,
+        tailoring and vision for timeless elegance. Over the decades,
         we've preserved craftsmanship while embracing innovation, 
         making every stitch tell a story of heritage and excellence.
         <br></br>
