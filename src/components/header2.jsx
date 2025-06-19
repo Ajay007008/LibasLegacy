@@ -4,8 +4,10 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleServices = () => setIsServicesOpen(!isServicesOpen);
 
   return (
     <div className="head">
@@ -35,24 +37,31 @@ const Header2 = () => {
             </div>
           </div>
 
-          {/* Menu - Mobile */}
+          {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="md:hidden mt-4 bg-black/70 p-4 rounded-lg space-y-4 text-white">
               <Dropdown />
               <NavItem label="FEATURE" />
               <NavItem label="ABOUT" />
 
-              {/* Services dropdown for mobile */}
+              {/* OUR SERVICES toggle for mobile */}
               <div>
-                <div className="font-semibold">OUR SERVICES</div>
-                <div className="pl-4 space-y-2 text-sm text-gray-300">
-                  <div>Bespoke Suits</div>
-                  <div>Tailored Trousers</div>
-                  <div>Custom Shirts</div>
-                  <div>Safari Suits</div>
-                  <div>Tuxedo Suits</div>
-                  <div>Fabrics</div>
+                <div
+                  className="cursor-pointer"
+                  onClick={toggleServices}
+                >
+                  OUR SERVICES
                 </div>
+                {isServicesOpen && (
+                  <div className="pl-4 space-y-2 text-sm text-gray-300 mt-2">
+                    <div>Bespoke Suits</div>
+                    <div>Tailored Trousers</div>
+                    <div>Custom Shirts</div>
+                    <div>Safari Suits</div>
+                    <div>Tuxedo Suits</div>
+                    <div>Fabrics</div>
+                  </div>
+                )}
               </div>
 
               <NavItem label="SUITS" />
@@ -86,6 +95,7 @@ const ServicesDropdown = () => (
   <div className="relative group cursor-pointer">
     <div className="hover:text-yellow-400 transition">OUR SERVICES</div>
     <div className="absolute hidden group-hover:block mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[200px]">
+      <div className="p-3 hover:bg-gray-700">Uniform</div>
       <div className="p-3 hover:bg-gray-700">Bespoke Suits</div>
       <div className="p-3 hover:bg-gray-700">Tailored Trousers</div>
       <div className="p-3 hover:bg-gray-700">Custom Shirts</div>
