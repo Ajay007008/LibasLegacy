@@ -1,56 +1,69 @@
-import Header from './components/header'
-import Hero from './components/hero'
-import Services from './components/services'
-import ContactInfo from './components/contactInfo'
-import CustomCollection from './components/customCollections'
-import CustomCollection2 from './components/customCollection2'
-import CustomCollections3 from './components/customeCollection3'
-import Tailor from './components/tailor'
-import AutoSlider from './components/autoSlider'
-import VideoPlayer from './components/videoPlayer'
-import OurStory from './components/ourStory'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
 
-import Header2 from './components/header2'
+// Pages
+import MenPage from './components/MenPage';
+import WomenPage from './components/WomenPage';
+import WeddingPage from './components/WeddingPage';
+import TuxedosPage from './components/TuxedosPage';
+import AlterationPage from './components/AlterationPage';
 
-import './App.css'
 
-function App() {
 
+
+
+
+
+// Components for the Home Page
+import Header2 from './components/header2';
+import Banner1 from './components/banner1';
+import Banner2 from './components/banner2';
+import VideoPlayer from './components/videoPlayer';
+import CustomCollections3 from './components/customeCollection3';
+import AutoSlider from './components/autoSlider';
+import Hero from './components/hero';
+import Banner3 from './components/banner3';
+import Services from './components/services';
+import OurStory from './components/ourStory';
+import CustomCollection from './components/customCollections';
+import ContactInfo from './components/contactInfo';
+
+function HomePage() {
   return (
-  <div>
-    
-    <Header2/>
-
-
-    <Tailor/>
-    <VideoPlayer/>
-    <CustomCollections3/>
-    <AutoSlider/>
-   
-
-    <Hero/>
-    
-    <Services/>
-
-   <OurStory/>
-
-    <CustomCollection/>
-  
-
-
-
-
-    <ContactInfo/>
-
-    
-    
-     {/* <CustomCollection2/> */}
- 
-    
-
-
-  </div>
-  )
+    <>
+      <Header2 />
+      <Banner1 />
+      <Banner2 />
+      <VideoPlayer />
+      <CustomCollections3 />
+      <AutoSlider />
+      <Hero />
+      <Banner3 />
+      <Services />
+      <OurStory />
+      <CustomCollection />
+      <ContactInfo />
+      {/* <CustomCollection2 /> */}
+    </>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <Routes>
+        {/* Home Page Route */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* Other Pages */}
+        <Route path="/men" element={<MenPage />} />
+        <Route path="/women" element={<WomenPage />} />
+        <Route path="/wedding" element={<WeddingPage />} />
+        <Route path="/tuxedos" element={<TuxedosPage />} />
+        <Route path="/alteration" element={<AlterationPage />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

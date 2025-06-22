@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import img2 from '../assets/header2/suit1.avif';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import img3 from '../assets/header2/logo4.png';
+import video from '../assets/header2/video.mp4';
 
 const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,48 +12,82 @@ const Header2 = () => {
   const toggleServices = () => setIsServicesOpen(!isServicesOpen);
 
   return (
-    <div className="head">
-      <div
-        className="w-full min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${img2})` }}
-      >
+    <div className="relative w-full min-h-screen overflow-hidden head">
+      {/* Background Video */}
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src={video}
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+
+      {/* Overlay Content */}
+      <div className="relative z-10 w-full min-h-screen bg-black/50">
         <div className="max-w-screen-xl mx-auto px-4 py-4">
           {/* Top Nav */}
           <div className="flex items-center justify-between text-white">
-            {/* Logo or Title */}
-            <div className="text-center">
-            <h1 className="text-xl sm:text-4xl md:text-5xl font-serif font-bold text-white">Libas Legacy</h1>  <div className="h-[1px] w-20 bg-yellow-500 mx-auto my-1" />
-  <p className="text-sm tracking-widest text-white">BESPOKE.DUBAI</p>
-</div>
+            {/* Desktop Menu */}
+            <div className="hidden md:flex justify-between items-center w-full">
+              {/* Left Nav */}
+              <div className="flex space-x-12 items-center">
+                <Link to="/men" className="hover:text-[#820D23] transition duration-300">
+                  MEN
+                </Link>
+                <Link to="/women" className="hover:text-[#820D23] transition duration-300">
+                  WOMEN
+                </Link>
+                <Link to="/wedding" className="hover:text-[#820D23] transition duration-300">
+                  WEDDING
+                </Link>
+              </div>
+
+              {/* Logo Centered */}
+              <div className="w-[100px] sm:w-[140px] md:w-[160px] flex justify-center">
+                <img src={img3} alt="Libas Legacy Logo" className="w-full h-auto object-contain" />
+              </div>
+
+              {/* Right Nav */}
+              <div className="flex space-x-12 items-center">
+                <Link to="/tuxedos" className="hover:text-[#820D23] transition duration-300">
+                  TUXEDOS
+                </Link>
+                <Link to="/alteration" className="hover:text-[#820D23] transition duration-300">
+                  ALTERATION
+                </Link>
+                <ServicesDropdown />
+              </div>
+            </div>
+
             {/* Hamburger - Mobile Only */}
             <div className="md:hidden text-xl cursor-pointer" onClick={toggleMenu}>
               {isMenuOpen ? <FaTimes /> : <FaBars />}
-            </div>
-
-            {/* Menu - Desktop */}
-            <div className="hidden md:flex space-x-6 items-center">
-              <Dropdown />
-              <NavItem label="FEATURE" />
-              <NavItem label="ABOUT" />
-              <ServicesDropdown />
-              <NavItem label="SUITS" />
-              <NavItem label="CONTACTS" />
             </div>
           </div>
 
           {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="md:hidden mt-4 bg-black/70 p-4 rounded-lg space-y-4 text-white">
-              <Dropdown />
-              <NavItem label="FEATURE" />
-              <NavItem label="ABOUT" />
+              <Link to="/men" className="block hover:text-[#820D23]" onClick={() => setIsMenuOpen(false)}>
+                MEN
+              </Link>
+              <Link to="/women" className="block hover:text-[#820D23]" onClick={() => setIsMenuOpen(false)}>
+                WOMAN
+              </Link>
+              <Link to="/wedding" className="block hover:text-[#820D23]" onClick={() => setIsMenuOpen(false)}>
+                WEDDING
+              </Link>
+              <Link to="/tuxedos" className="block hover:text-[#820D23]" onClick={() => setIsMenuOpen(false)}>
+                TUXEDOS
+              </Link>
+              <Link to="/alteration" className="block hover:text-[#820D23]" onClick={() => setIsMenuOpen(false)}>
+                ALTERATION
+              </Link>
 
               {/* OUR SERVICES toggle for mobile */}
               <div>
-                <div
-                  className="cursor-pointer"
-                  onClick={toggleServices}
-                >
+                <div className="cursor-pointer" onClick={toggleServices}>
                   OUR SERVICES
                 </div>
                 {isServicesOpen && (
@@ -66,9 +102,6 @@ const Header2 = () => {
                   </div>
                 )}
               </div>
-
-              <NavItem label="SUITS" />
-              <NavItem label="CONTACTS" />
             </div>
           )}
         </div>
@@ -77,34 +110,17 @@ const Header2 = () => {
   );
 };
 
-// === Reusable Components ===
-
-const NavItem = ({ label }) => (
-  <div className="cursor-pointer hover:text-yellow-400 transition">{label}</div>
-);
-
-const Dropdown = () => (
-  <div className="relative group cursor-pointer">
-    <div className="hover:text-yellow-400 transition">HOME</div>
-    <div className="absolute hidden group-hover:block mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[200px]">
-      <div className="p-3 hover:bg-gray-700">HOMEPAGE FULLWIDTH</div>
-      <div className="p-3 hover:bg-gray-700">HOMEPAGE BOXED</div>
-      <div className="p-3 hover:bg-gray-700">HOMEPAGE SHOP</div>
-    </div>
-  </div>
-);
-
 const ServicesDropdown = () => (
   <div className="relative group cursor-pointer">
-    <div className="hover:text-yellow-400 transition">OUR SERVICES</div>
+    <div className="hover:text-[#820D23] transition duration-300">OUR SERVICES</div>
     <div className="absolute hidden group-hover:block mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[200px]">
-      <div className="p-3 hover:bg-gray-700">Uniform</div>
-      <div className="p-3 hover:bg-gray-700">Bespoke Suits</div>
-      <div className="p-3 hover:bg-gray-700">Tailored Trousers</div>
-      <div className="p-3 hover:bg-gray-700">Custom Shirts</div>
-      <div className="p-3 hover:bg-gray-700">Safari Suits</div>
-      <div className="p-3 hover:bg-gray-700">Tuxedo Suits</div>
-      <div className="p-3 hover:bg-gray-700">Fabrics</div>
+      <div className="p-3 hover:bg-[#820D23] transition duration-200">Uniform</div>
+      <div className="p-3 hover:bg-[#820D23] transition duration-200">Bespoke Suits</div>
+      <div className="p-3 hover:bg-[#820D23] transition duration-200">Tailored Trousers</div>
+      <div className="p-3 hover:bg-[#820D23] transition duration-200">Custom Shirts</div>
+      <div className="p-3 hover:bg-[#820D23] transition duration-200">Safari Suits</div>
+      <div className="p-3 hover:bg-[#820D23] transition duration-200">Tuxedo Suits</div>
+      <div className="p-3 hover:bg-[#820D23] transition duration-200">Fabrics</div>
     </div>
   </div>
 );

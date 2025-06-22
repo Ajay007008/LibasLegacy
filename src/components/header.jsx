@@ -1,6 +1,5 @@
 import React from 'react'
 import logo from "../assets/header/logo.png";
-import backgroundImage from "../assets/header/background.jpg";
 
 import suit1 from "../assets/header/suit1.avif"
 
