@@ -7,9 +7,11 @@ import video from '../assets/header2/video.mp4';
 const Header2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isAlterationOpen, setIsAlterationOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleServices = () => setIsServicesOpen(!isServicesOpen);
+  const toggleAlteration = () => setIsAlterationOpen(!isAlterationOpen);
 
   return (
     <div className="relative w-full min-h-screen overflow-hidden head">
@@ -53,9 +55,9 @@ const Header2 = () => {
                 <Link to="/tuxedos" className="hover:text-[#820D23] transition duration-300">
                   TUXEDOS
                 </Link>
-                <Link to="/alteration" className="hover:text-[#820D23] transition duration-300">
-                  ALTERATION
-                </Link>
+
+                <AlterationDropdown />
+
                 <ServicesDropdown />
               </div>
             </div>
@@ -81,9 +83,19 @@ const Header2 = () => {
               <Link to="/tuxedos" className="block hover:text-[#820D23]" onClick={() => setIsMenuOpen(false)}>
                 TUXEDOS
               </Link>
-              <Link to="/alteration" className="block hover:text-[#820D23]" onClick={() => setIsMenuOpen(false)}>
-                ALTERATION
-              </Link>
+
+              {/* ALTERATION Dropdown */}
+              <div>
+                <div className="cursor-pointer" onClick={toggleAlteration}>
+                  ALTERATION
+                </div>
+                {isAlterationOpen && (
+                  <div className="pl-4 space-y-2 text-sm text-gray-300 mt-2">
+                    <Link to="/alteration/men" onClick={() => setIsMenuOpen(false)}>Men</Link>
+                    <Link to="/alteration/women" onClick={() => setIsMenuOpen(false)}>Women</Link>
+                  </div>
+                )}
+              </div>
 
               {/* OUR SERVICES toggle for mobile */}
               <div>
@@ -109,6 +121,28 @@ const Header2 = () => {
     </div>
   );
 };
+
+// === Dropdown Components ===
+
+const AlterationDropdown = () => (
+  <div className="relative group cursor-pointer">
+    <div className="hover:text-[#820D23] transition duration-300">ALTERATION</div>
+    <div className="absolute hidden group-hover:block mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[150px]">
+      <Link
+        to="/alteration/men"
+        className="block p-3 hover:bg-[#820D23] transition duration-200"
+      >
+        Men
+      </Link>
+      <Link
+        to="/alteration/women"
+        className="block p-3 hover:bg-[#820D23] transition duration-200"
+      >
+        Women
+      </Link>
+    </div>
+  </div>
+);
 
 const ServicesDropdown = () => (
   <div className="relative group cursor-pointer">
