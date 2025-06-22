@@ -15,7 +15,7 @@ const Banner1 = () => {
   };
 
   return (
-    <div className="relative flex flex-col md:flex-row h-screen w-full overflow-hidden mt-8">
+    <div className="relative flex flex-col md:flex-row h-screen w-full overflow-hidden ">
       {/* Left Panel - WOMEN */}
       <div className="group relative flex-1 overflow-hidden cursor-pointer" onClick={goToWomenPage}>
         <div

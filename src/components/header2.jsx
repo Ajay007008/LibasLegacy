@@ -34,13 +34,13 @@ const Header2 = () => {
             <div className="hidden md:flex justify-between items-center w-full">
               {/* Left Nav */}
               <div className="flex space-x-12 items-center">
-                <Link to="/men" className="hover:text-[#820D23] transition duration-300">
+                <Link to="/men" className="transition duration-300">
                   MEN
                 </Link>
-                <Link to="/women" className="hover:text-[#820D23] transition duration-300">
+                <Link to="/women" className="transition duration-300">
                   WOMEN
                 </Link>
-                <Link to="/wedding" className="hover:text-[#820D23] transition duration-300">
+                <Link to="/wedding" className="transition duration-300">
                   WEDDING
                 </Link>
               </div>
@@ -52,7 +52,7 @@ const Header2 = () => {
 
               {/* Right Nav */}
               <div className="flex space-x-12 items-center">
-                <Link to="/tuxedos" className="hover:text-[#820D23] transition duration-300">
+                <Link to="/tuxedos" className="transition duration-300">
                   TUXEDOS
                 </Link>
 
@@ -126,7 +126,7 @@ const Header2 = () => {
 
 const AlterationDropdown = () => (
   <div className="relative group cursor-pointer">
-    <div className="hover:text-[#820D23] transition duration-300">ALTERATION</div>
+    <div className=" transition duration-300">ALTERATION</div>
     <div className="absolute hidden group-hover:block mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[150px]">
       <Link
         to="/alteration/men"
@@ -146,7 +146,7 @@ const AlterationDropdown = () => (
 
 const ServicesDropdown = () => (
   <div className="relative group cursor-pointer">
-    <div className="hover:text-[#820D23] transition duration-300">OUR SERVICES</div>
+    <div className="transition duration-300">OUR SERVICES</div>
     <div className="absolute hidden group-hover:block mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[200px]">
       <div className="p-3 hover:bg-[#820D23] transition duration-200">Uniform</div>
       <div className="p-3 hover:bg-[#820D23] transition duration-200">Bespoke Suits</div>
