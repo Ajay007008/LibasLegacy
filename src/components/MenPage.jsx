@@ -80,9 +80,6 @@ const MenPage = () => {
               </button>
               <div className="mt-2 border-b border-white w-full"></div>
           </div>
-
-
-
         </div>
       </div>
 

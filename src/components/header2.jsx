@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import img3 from '../assets/header2/logo4.png';
+import img4 from '../assets/header2/logo2.png';
+import img5 from '../assets/header2/logo5.png';
+
+
+
 import video from '../assets/header2/video.mp4';
 
 const Header2 = () => {
@@ -45,10 +50,17 @@ const Header2 = () => {
                 </Link>
               </div>
 
+
+
+
               {/* Logo Centered */}
-              <div className="w-[100px] sm:w-[140px] md:w-[160px] flex justify-center">
-                <img src={img3} alt="Libas Legacy Logo" className="w-full h-auto object-contain" />
+              <div className="w-[100px] sm:w-[160px] md:w-[270px] flex justify-center">
+                <img src={img5} alt="Libas Legacy Logo" className="w-full h-auto object-contain" />
               </div>
+
+
+
+
 
               {/* Right Nav */}
               <div className="flex space-x-12 items-center">
