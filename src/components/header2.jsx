@@ -138,16 +138,18 @@ const Header2 = () => {
 
 const AlterationDropdown = () => (
   <div className="relative group cursor-pointer">
-    <div className=" transition duration-300">ALTERATION</div>
-    <div className="absolute hidden group-hover:block mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[150px]">
+    <div className="transition duration-300">ALTERATION</div>
+    
+    {/* FIX: Add group-hover to parent and keep dropdown visible when hovering inside it */}
+    <div className="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[150px]">
       <Link
-        to="/alteration/men"
+        to="/alteration?type=men"
         className="block p-3 hover:bg-[#820D23] transition duration-200"
       >
         Men
       </Link>
       <Link
-        to="/alteration/women"
+        to="/alteration?type=women"
         className="block p-3 hover:bg-[#820D23] transition duration-200"
       >
         Women
