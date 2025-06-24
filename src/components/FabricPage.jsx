@@ -1,8 +1,6 @@
 import React from 'react';
 import video1 from '../assets/FabricPage/Fabric1.mp4';
-import video2 from '../assets/FabricPage/Fabric2.mp4';
-
-import img1 from '../assets/FabricPage/img1.jpg';
+import img1 from '../assets/FabricPage/img1.JPG';
 import img2 from '../assets/FabricPage/img2.jpeg';
 import img3 from '../assets/FabricPage/img3.jpeg';
 
