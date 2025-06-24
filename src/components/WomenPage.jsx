@@ -1,4 +1,6 @@
 import React from 'react';
+
+import video from '../assets/WomenPage/video.mp4'
 import img1 from '../assets/WomenPage/img1.png';
 import img2 from '../assets/WomenPage/img2.webp';
 import img3 from '../assets/WomenPage/img3.png';
@@ -24,36 +26,45 @@ const WomenPage = () => {
     <div className="relative">
      
      
-      {/* Top Heading */}
-      <div className="bg-black/80 text-white py-2 text-center">
-        <h1 className="text-xl font-serif font-semibold uppercase tracking-widest drop-shadow-lg">Women</h1>
-        <p className="text-sm text-gray-300 italic tracking-wide">
-          Explore Our Exclusive Bespoke Collection
-        </p>
+{/* Fullscreen Video Banner */}
+<div className="relative w-full h-[850px] overflow-hidden">
+  <video
+    className="absolute top-0 left-0 w-full h-full object-cover"
+    src={video}
+    autoPlay
+    muted
+    loop
+    playsInline
+  />
+<div className="absolute top-0 left-0 w-full bg-black/50 text-white text-center py-4">
+        <h1 className="text-2xl md:text-4xl font-serif font-semibold uppercase tracking-widest drop-shadow-lg">
+        Suits for Her
+        </h1>
+        <p className="text-sm md:text-base text-gray-200 italic mt-1">  
+        Where Timeless Craft Meets the Modern Woman’s Wardrobe
+             </p>
       </div>
 
 
+</div>
 
 
 
 
-
-      {/* Image Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 w-full">
-        {data.map((item, idx) => (
-          <div key={idx} className="relative w-full h-screen overflow-hidden">
-            <img
-              src={item.img}
-              alt={`Women's Suit ${idx + 1}`}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute bottom-0 w-full z-10 bg-gradient-to-t from-black/80 to-transparent p-4">
-              <p className="text-sm text-white text-justify leading-relaxed">{item.text}</p>
-            </div>
-          </div>
-        ))}
+<div className="grid grid-cols-1 md:grid-cols-3 w-full">
+  {[img1, img2, img3].map((image, idx) => (
+    <div key={idx} className="relative w-full h-[80vh] overflow-hidden">
+      <img
+        src={image}
+        alt={`Women's Suit ${idx + 1}`}
+        className={`w-full h-full object-cover ${idx === 0 || idx === 1 ? 'object-top' : ''}`}
+      />
+      <div className="absolute bottom-0 w-full z-10 bg-gradient-to-t from-black/80 to-transparent p-4">
+        <p className="text-sm text-white text-justify leading-relaxed"></p>
       </div>
-
+    </div>
+  ))}
+</div>
 
 
       

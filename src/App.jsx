@@ -5,7 +5,7 @@ import './App.css';
 import MenPage from './components/MenPage';
 import WomenPage from './components/WomenPage';
 import WeddingPage from './components/WeddingPage';
-import TuxedosPage from './components/TuxedosPage';
+import FabricPage from './components/FabricPage';
 import AlterationPage from './components/AlterationPage';
 
 
@@ -59,7 +59,7 @@ function App() {
         <Route path="/men" element={<MenPage />} />
         <Route path="/women" element={<WomenPage />} />
         <Route path="/wedding" element={<WeddingPage />} />
-        <Route path="/tuxedos" element={<TuxedosPage />} />
+        <Route path="/tuxedos" element={<FabricPage />} />
         <Route path="/alteration" element={<AlterationPage />} />
       </Routes>
     </Router>

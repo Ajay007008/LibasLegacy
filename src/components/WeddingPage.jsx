@@ -27,11 +27,6 @@ const WeddingPage = () => {
 
 
 
-
-
-
-
-
                {/*Ladies Bespoke Business Suits Section */}
                  <div className="flex flex-col md:flex-row w-full h-auto md:h-[90vh] bg-[#1c2331] text-white">
                    {/* Left Image */}
