@@ -7,7 +7,7 @@ import WomenPage from './components/WomenPage';
 import WeddingPage from './components/WeddingPage';
 import FabricPage from './components/FabricPage';
 import AlterationPage from './components/AlterationPage';
-import TuxedosPage from './components/TuxedosPage';
+import TuxedosPage from './components/tuxedosPage';
 
 
 
