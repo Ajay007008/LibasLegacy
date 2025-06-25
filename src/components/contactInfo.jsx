@@ -3,6 +3,8 @@ import img1 from '../assets/contactInfo/img1.jpg'
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FiClock, FiSmartphone } from "react-icons/fi";
 
+
+
 const contactInfo = () => {
   return (
 
@@ -62,6 +64,7 @@ const contactInfo = () => {
       <span>123 - 456 - 7890</span>
     </div>
   </div>
+  
 </div>
 
 

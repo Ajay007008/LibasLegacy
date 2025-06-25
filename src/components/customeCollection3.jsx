@@ -6,6 +6,14 @@ import { motion } from 'framer-motion';
 
 const CustomeCollection3 = () => {
   const navigate = useNavigate();
+  
+
+    const handleNavigate = () => {
+    navigate('/alteration');
+    setTimeout(() => {
+      window.scrollTo(0, 0); // Ensures scroll happens after navigation renders
+    }, 0);
+  };
 
   
   return (
@@ -32,7 +40,7 @@ const CustomeCollection3 = () => {
           </p>
        
           <button
-            onClick={() => navigate('/alteration')}
+           onClick={handleNavigate}
             className="uppercase tracking-widest border-b-2 border-white text-sm transition cursor-pointer">
             Book Alteration
           </button>

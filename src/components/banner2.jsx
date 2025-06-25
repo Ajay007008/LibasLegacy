@@ -8,6 +8,7 @@ const Banner2 = () => {
 
   const handleNavigate = () => {
     navigate('/tuxedos');
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -32,7 +33,7 @@ const Banner2 = () => {
         </motion.p>
 
         <motion.h1
-          className="text-xl md:text-3xl font-semibold leading-tight hover:text-[#820D23] transition"
+          className="text-xl md:text-3xl font-semibold leading-tight transition"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}

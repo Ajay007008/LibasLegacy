@@ -64,7 +64,7 @@ const Header2 = () => {
 
               {/* Right Nav */}
               <div className="flex space-x-12 items-center">
-                <Link to="/tuxedos" className="transition duration-300">
+                <Link to="/fabric" className="transition duration-300">
                   FABRIC
                 </Link>
 

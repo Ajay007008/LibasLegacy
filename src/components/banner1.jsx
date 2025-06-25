@@ -6,13 +6,16 @@ import img2 from '../assets/banner1/img2.png';
 const Banner1 = () => {
   const navigate = useNavigate();
 
-  const goToWomenPage = () => {
-    navigate('/women');
-  };
+const goToWomenPage = () => {
+  navigate('/women');
+  window.scrollTo(0, 0);
+};
 
-  const goToMenPage = () => {
-    navigate('/men');
-  };
+ const goToMenPage = () => {
+  navigate('/men');
+  window.scrollTo(0, 0);
+};
+
 
   return (
     <div className="relative flex flex-col md:flex-row h-screen w-full overflow-hidden ">
