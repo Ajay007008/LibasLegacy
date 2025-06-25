@@ -142,18 +142,85 @@ const AlterationDropdown = () => (
     
     {/* FIX: Add group-hover to parent and keep dropdown visible when hovering inside it */}
     <div className="absolute invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 mt-2 bg-gray-800 text-white rounded shadow-lg z-10 min-w-[150px]">
-      <Link
-        to="/alteration?type=men"
-        className="block p-3 hover:bg-[#820D23] transition duration-200"
-      >
-        Men
+      <Link to="/alteration?type=men" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Men/Women
       </Link>
-      <Link
-        to="/alteration?type=women"
-        className="block p-3 hover:bg-[#820D23] transition duration-200"
-      >
-        Women
+      
+      <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Trousers
       </Link>
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        T-Shirt
+      </Link>
+
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Business Suit
+      </Link>
+
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Wedding Suit
+      </Link>
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Wedding Dress
+      </Link>
+
+
+
+       <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Skirts
+      </Link>
+
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Evening Dress
+      </Link>
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Waist Coat
+      </Link>
+
+
+
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Shirts
+      </Link>
+
+
+
+       <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Jacket
+      </Link>
+
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Jeans
+      </Link>
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        Abaya
+      </Link>
+
+
+
+        <Link to="/alteration?type=women" className="block p-3 hover:bg-[#820D23] transition duration-200">
+        And More...
+      </Link>
+
+
+
+
+
+
+
+
+
+
+
     </div>
   </div>
 );

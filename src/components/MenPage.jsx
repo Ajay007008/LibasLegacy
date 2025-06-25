@@ -1,8 +1,7 @@
 import React from 'react';
 import img1 from '../assets/MenPage/img1.webp';
-import img2 from '../assets/MenPage/img2.webp';
+import img2 from '../assets/MenPage/img5.webp';
 import img4 from '../assets/MenPage/img4b.JPG';
-
 
 import img3 from '../assets/MenPage/img4.webp';
 import img5 from '../assets/MenPage/img5.webp';
