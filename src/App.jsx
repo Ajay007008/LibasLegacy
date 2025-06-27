@@ -16,6 +16,9 @@ import Terms from './components/footerPage/terms.jsx';
 
 
 
+// CallButton and Whatsapp
+import CallNowButton from './components/callButton.jsx'
+import WhatsAppButton from './components/whatsappButton.jsx'
 
 
 
@@ -58,6 +61,14 @@ function HomePage() {
 function App() {
   return (
     <Router>
+
+        {/* Global Call Now button visible on every page */}
+      <CallNowButton />
+      <WhatsAppButton />
+
+
+
+
       <Routes>
         {/* Home Page Route */}
         <Route path="/" element={<HomePage />} />

@@ -46,11 +46,10 @@ const About = () => {
           <div>
             <h2 className="text-4xl font-serif mb-6">Our History</h2>
             <p className="text-lg leading-relaxed mb-4">
-              In 2017 Ryan Smith and Calvin Smith, co-founders and creators<br />
-              of Suited & Booted, came together with one key focus in mind.<br />
-              Identifying a clear gap in the region for a premium bespoke<br />
-              product with an exceptional level of service, the pair set about<br />
-              to change the way you experience tailoring in the UK.
+             In 2017, the founders of Lebas Legacy came together with one key<br />
+              focus in mind. Identifying a clear gap in the region for a premium<br />
+              bespoke product with an exceptional level of service, they set out<br />
+              to transform the way you experience tailoring in the UK.
             </p>
             <p className="text-lg leading-relaxed">
               Since then, the brand has been committed to providing the<br />
@@ -68,7 +67,7 @@ const About = () => {
             <h2 className="text-4xl font-serif mb-6">Our Team</h2>
             <p className="text-lg leading-relaxed mb-4">
               With a wide variety of backgrounds and skill sets, the team at
-              Suited and Booted is a group of dedicated professionals who are
+              Lebas Legacy is a group of dedicated professionals who are
               committed to providing each client with an exceptional level
               of service and support throughout their tailoring journey.
             </p>

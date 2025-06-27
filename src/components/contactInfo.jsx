@@ -36,11 +36,12 @@ const ContactInfo = () => {
         {/* Left links */}
       <div className="space-y-1 font-light tracking-widest text-md">
        <h4 className="text-md font-serif font-bold text-gray-900 mb-4">QUICK LINKS</h4>
-          <Link to="/about" className="hover:underline">ABOUT US</Link>
-          <Link to="/contact" className="hover:underline block">CONTACT US</Link>
-          <Link to="/terms" className="hover:underline block">TERMS</Link>
-          <Link to="/privacy" className="hover:underline block">PRIVACY</Link>
-          <Link to="/refund" className="hover:underline block">REFUND POLICY</Link>
+       <Link to="/about" onClick={() => window.scrollTo(0, 0)} className="hover:underline">ABOUT US</Link>
+        <Link to="/contact" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">CONTACT US</Link>
+        <Link to="/terms" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">TERMS</Link>
+        <Link to="/privacy" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">PRIVACY</Link>
+        <Link to="/refund" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">REFUND POLICY</Link>
+
      </div>
 
         {/* Email Subscription */}
