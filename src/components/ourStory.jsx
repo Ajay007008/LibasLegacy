@@ -8,7 +8,7 @@ const OurStory = () => {
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-12">
         {/* Left: Text Section */}
         <div className="w-full md:w-1/2 px-2 text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">OUR STORY</h2>
+          <h2 className="text-3xl font-serif sm:text-4xl md:text-5xl font-bold mb-6">OUR STORY</h2>
 
           <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
             Established in 1986, our journey began with a passion for tailoring and vision for timeless

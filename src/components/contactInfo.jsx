@@ -1,79 +1,71 @@
-import React from 'react'
-import img1 from '../assets/contactInfo/img1.jpg'
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import { FiClock, FiSmartphone } from "react-icons/fi";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
-const contactInfo = () => {
+const ContactInfo = () => {
   return (
-
-  <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
-    
-
- {/* Image Section */}
-        <div>
-        <img src={img1} alt="Tailored Suit" className=" shadow-lg w-full h-120 object-cover" />
-      </div>
-
-
-
-
-      {/* Google Map */}
+    <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 p-8 text-black">
+      
+      {/* Left: Contact Info */}
       <div>
-        <iframe
-          title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1807.7822622286854!2d55.2275556!3d25.1176944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDA3JzAzLjciTiA1NcKwMTMnMzkuMiJF!5e0!3m2!1sen!2sin!4v1718631123456"
-          width="100%"
-          height="480"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="rounded-xl shadow-lg"
-        ></iframe>
-      </div>
+        <h2 className="text-4xl font-serif font-bold mb-6">CONTACT INFO</h2>
+       
 
-{/* Contact Information */}
-<div className="flex flex-col justify-start">
-  <h2 className="text-4xl font-serif font-bold mb-6">CONTACT INFO</h2>
-  <p className="text-gray-600 mb-4">
-    Have a question? Our team is always ready to help. Feel free to come to us anytime —
-    we are glad to see you at our studio.
-  </p>
+        <div className="space-y-2 text-gray-800">
+          <div className="flex items-start space-x-3">
+            <span>Capitol Compound ZAQ Warehouse No: 4, <br></br>Street No: 10,Near Emirates Glass Alquoz 4, Dubai</span>
+            
+          </div>
 
-  <div className="space-y-5 text-gray-700">
-    {/* Location */}
-    <div className="flex items-start space-x-3">
-      <HiOutlineLocationMarker className="text-yellow-600 text-2xl mt-1" />
-      <span>Plot 369-207, Al Quoz Industrial Area 4, Dubai</span>
-    </div>
+          <div className="flex items-start space-x-3 mt-3">
+            <div>
+              <p>Monday - Friday: 10 am - 10 pm</p>
+              <p>Sunday: 11 am - 9 pm</p>
+            </div>
+          </div>
 
-    {/* Hours */}
-    <div className="flex items-start space-x-3">
-      <FiClock className="text-yellow-600 text-2xl mt-1" />
-      <div>
-        <p>Monday - Friday: 10 am - 10 pm</p>
-        <p>Sunday: 11 am - 9 pm</p>
-      </div>
-    </div>
-
-    {/* Phone */}
-    <div className="flex items-start space-x-3">
-      <FiSmartphone className="text-yellow-600 text-2xl mt-1" />
-      <span>123 - 456 - 7890</span>
-    </div>
-  </div>
-  
-</div>
-
-
-
-
-
-
+          <div className="flex items-start space-x-3 mt-3">
+            <span>+971543191992</span>
+          </div>
         </div>
-  )
-}
+      </div>
 
-export default contactInfo
+      {/* Right: Footer-style Links and Newsletter */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 -ml-18 gap-10">
+        {/* Left links */}
+      <div className="space-y-1 font-light tracking-widest text-md">
+       <h4 className="text-md font-serif font-bold text-gray-900 mb-4">QUICK LINKS</h4>
+          <Link to="/about" className="hover:underline">ABOUT US</Link>
+          <Link to="/contact" className="hover:underline block">CONTACT US</Link>
+          <Link to="/terms" className="hover:underline block">TERMS</Link>
+          <Link to="/privacy" className="hover:underline block">PRIVACY</Link>
+          <Link to="/refund" className="hover:underline block">REFUND POLICY</Link>
+     </div>
+
+        {/* Email Subscription */}
+        <div>
+          <h3 className="text-lg sm:text-2xl  font-serif font-bold  mb-4">STAY INSPIRED</h3>
+          <p className="text-gray-700 mb-6">
+            Sign up to our email newsletter to keep up to date with our latest news and special offers
+          </p>
+          <form className="space-y-4">
+            <input
+              type="email"
+              placeholder="EMAIL ADDRESS"
+              className="w-full px-4 py-2 bg-transparent border-b border-gray-400 focus:outline-none text-sm tracking-wider"
+            />
+            <button
+              type="submit"
+              className="bg-[#B8954A] hover:bg-[#a8863e] text-white px-6 py-2 tracking-widest"
+            >
+              SUBSCRIBE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ContactInfo;

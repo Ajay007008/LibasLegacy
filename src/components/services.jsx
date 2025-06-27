@@ -1,72 +1,112 @@
-import React from 'react'
+import React from 'react';
+import { FaRulerCombined } from "react-icons/fa";
+import { FaScissors, FaUserTie, FaHandshake, FaCheck } from "react-icons/fa6";
 
-import img1 from "../assets/services/img1.jpg";
-import img2 from "../assets/services/img2.jpg";
-import img3 from "../assets/services/img3.jpg";
-import img4 from "../assets/services/img4.jpg";
+import img1 from '../assets/services/img4.png';
+import img2 from '../assets/services/img5.png';
+import img3 from '../assets/services/img6.png';
 
+const processSteps = [
+  {
+    title: 'MEASUREMENT',
+    icon: <FaRulerCombined size={32} className="text-white" />,
+    image: img1,
+    description:
+      'Visit our store or book an appointment and our tailoring consultant will visit you at your preferred place to take your measurements, choose the fabric, model and note your custom requirements.',
+  },
+  {
+    title: 'ADJUSTMENTS',
+    icon: <FaScissors size={32} className="text-white" />,
+    image: img2,
+    description:
+      'You will try on the skeleton of your suit for the first time. It is not fully constructed. Instead, it is basted together to allow us to mould the suit to you before it is completed.',
+  },
+  {
+    title: 'READY TO GO',
+    icon: <FaUserTie size={32} className="text-white" />,
+    image: img3,
+    description:
+      'You will try on your fully constructed suit for the first time. Your tailoring consultant will assess whether the suit needs any alterations. If your suit doesn’t need alterations, you may take it home.',
+  },
+];
 
-const servicesData = [
-    {
-      image: img1,
-      title: "Custom Accessories",
-      description:
-        "We have a wide range of bow ties which fit everyday fashion as well as special occasions",
-    },
-    {
-      image: img2,
-      title: "Custom Tailoring",
-      description:
-        "You can choose all details you want, from buttons to pockets and lapels, we can do everything.",
-    },
-    {
-      image: img3,
-      title: "Suit Resizing",
-      description:
-        "Each our suit is made to your exact measurements and fit your specific body type",
-    },
-    {
-      image: img4,
-      title: "Wedding Services",
-      description:
-        "You and your groomsmen deserve the sharpest suits. Let us help you create suits for your day.",
-    },
-  ];
-  
-  const services = () => {
-    return (
-      <section className="w-full bg-[#FAF9F7] py-20 px-6 text-center">
-        <div className="max-w-7xl mx-auto">
-          {/* Heading */}
-          <div className="mb-12">
-            <h3 className="text-sm tracking-widest text-[#B29277] mb-2">OUR SERVICES</h3>
-            <div className="w-20 h-[1px] bg-[#B29277] mx-auto mb-2" />
+const coreValues = [
+  {
+    icon: <FaHandshake size={30} className="text-[#29494C]" />,
+    label: 'TRUST',
+  },
+  {
+    icon: <FaScissors size={30} className="text-[#29494C]" />,
+    label: 'EXPERTISE',
+  },
+  {
+    icon: <FaCheck size={30} className="text-[#29494C]" />,
+    label: 'PERFECTION',
+  },
+];
+
+const Services = () => {
+  return (
+    <section className="bg-white py-5 px-4 md:px-12 text-center">
+      <h2 className="text-4xl font-serif text-[#002B36] mb-12 tracking-wide">OUR PROCESS</h2>
+
+      {/* Process Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto">
+        {processSteps.map((step, index) => (
+          <div
+            key={index}
+            className="relative bg-white border border-gray-300 rounded-lg shadow-sm p-6 pt-16 text-center min-h-[410px] w-80 mx-auto"
+          >
+            {/* Icon Circle */}
+            <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-[#002B36] p-4 rounded-full shadow-lg">
+              {step.icon}
+            </div>
+
+            {/* Step Title */}
+            <h3 className="text-xl font-bold tracking-wide mb-1 mt-4">{step.title}</h3>
+            <div className="w-10 h-[2px] bg-[#002B36] mx-auto mb-4"></div>
+
+            {/* Step Image */}
+            <img
+              src={step.image}
+              alt={`Step ${index + 1}`}
+              className="w-8 h-8 mx-auto mb-4"
+            />
+
+            {/* Description */}
+            <p className="text-md text-[#B29277] leading-relaxed">{step.description}</p>
           </div>
-  
-          {/* Service Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-            {servicesData.map((service, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-40 h-40 object-cover rounded-full mb-6"
-                />
-                <h4 className="text-xl font-serif  uppercase mb-4 tracking-wide">
-                  {service.title}
-                </h4>
-                <p className="text-sm text-gray-600 mb-6 max-w-[220px]">
-                  {service.description}
-                </p>
-                <button className="border border-[#B29277] text-[#B29277] px-6 py-2 text-sm uppercase tracking-widest hover:bg-[#B29277] hover:text-white transition">
-                  Discover
-                </button>
-              </div>
-            ))}
-          </div>
+        ))}
+      </div>
+
+
+
+      {/* Culture Section */}
+      <div className="mt-11">
+        <p className="text-sm text-[#B29277] tracking-[0.2em] mb-2">THE CULTURE</p>
+        <h2 className="text-4xl font-serif text-[#002B36] mb-6">HOW WE PURSUE PERFECTION</h2>
+
+        {/* Divider with scissors */}
+        <div className="flex justify-center items-center mb-10">
+          <div className="border-t border-dashed border-[#B29277] w-48" />
+          <FaScissors className="mx-4 text-[#B29277]" />
+          <div className="border-t border-dashed border-[#B29277] w-48" />
         </div>
-      </section>
-    );
-  };
 
-export default services;
+        {/* Icons Row */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-4xl mx-auto">
+          {coreValues.map((item, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="w-16 h-16 border-2 border-[#29494C] rounded-full flex items-center justify-center mb-4">
+                {item.icon}
+              </div>
+              <p className="text-[#B29277] text-sm tracking-[0.2em] font-semibold">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Services;

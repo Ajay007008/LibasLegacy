@@ -8,7 +8,11 @@ import WeddingPage from './components/WeddingPage';
 import FabricPage from './components/FabricPage';
 import AlterationPage from './components/AlterationPage';
 import TuxedosPage from './components/tuxedosPage';
-
+import AboutUs from './components/footerPage/about'; 
+import ContactUs from './components/footerPage/contact.jsx';
+import Privacy from './components/footerPage/privacy.jsx';
+import Refund from './components/footerPage/refundPolicy.jsx';
+import Terms from './components/footerPage/terms.jsx';
 
 
 
@@ -38,7 +42,6 @@ function HomePage() {
       <VideoPlayer />
       <CustomCollections3 />
       <AutoSlider />
-      <Hero />
       <Banner3 />
       <Services />
       <OurStory />
@@ -66,6 +69,12 @@ function App() {
         <Route path="/alteration" element={<AlterationPage />} />
         <Route path="/tuxedos" element={<TuxedosPage />} />
           <Route path="/fabric" element={<FabricPage />} />
+          <Route path="/about" element={<AboutUs/>} />
+          <Route path="/contact" element={<ContactUs/>} />
+          <Route path="/privacy" element={<Privacy/>} />
+          <Route path="/refund" element={<Refund/>} />
+          <Route path="/terms" element={<Terms/>} />
+
       </Routes>
     </Router>
   );

@@ -9,6 +9,14 @@ import img5 from '../assets/WomenPage/img5.jpg';
 import img6 from '../assets/WomenPage/img6.jpg';
 
 
+import img7 from '../assets/WomenPage/img7.jpg';
+import img8 from '../assets/WomenPage/img8.jpg';
+import img9 from '../assets/WomenPage/img9.jpg';
+
+
+
+
+
 const WomenPage = () => {
   const data = [
     {
@@ -65,6 +73,89 @@ const WomenPage = () => {
     </div>
   ))}
 </div>
+
+
+
+
+                 {/*Ladies Bespoke Dress*/}
+           <div className="flex flex-col md:flex-row w-full h-auto md:h-[90vh] bg-[#1c2331] text-white">
+             {/* Left Image */}
+             <div className="w-full md:w-1/2 h-80 md:h-full overflow-hidden">
+               <img
+                 src={img7}
+                 alt="Tailored Suit In Progress"
+                 className="w-full h-full object-cover scale" 
+               />
+             </div>
+     
+     
+             {/* Right Text Content */}
+             <div className="w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center bg-gradient-to-b from-[#1c2331] to-[#1c2331]">
+               <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
+                      Timeless Bespoke Dresses            
+                      </h2>
+        
+              <p className="text-sm md:text-base text-gray-300 mb-8 leading-relaxed">
+                  At Lebas Legacy, every bespoke dress is a reflection of elegance, precision, and personal style. Whether you seek a statement piece for a formal event or refined sophistication for daily wear, our artisans craft dresses tailored to your unique measurements and preferences.
+                  From luxurious fabrics to couture-level finishes, we ensure each dress tells your story — beautifully and impeccably.                 
+                    </p>
+     
+               {/* Button */}
+               <div className="w-fit">
+                   <button className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
+                     Book an Appointment →
+                   </button>
+                   <div className="mt-2 border-b border-white w-full"></div>
+               </div>
+             </div>
+           </div>
+
+
+
+
+
+
+
+           {/* Collaboration and Experience Section */}
+                 <div className="flex flex-col md:flex-row w-full h-auto md:h-[100vh] bg-[#1c2331] text-white">
+                  {/* Left Text Content */}
+                  <div className="w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center bg-gradient-to-b from-[#1c2331] to-[#1c2331]">
+                    <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
+                          Elegantly Tailored Skirts
+
+                                </h2>
+                    <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
+                              Experience the art of custom tailoring with our bespoke skirts — crafted to complement your silhouette and elevate your wardrobe. 
+                              At Lebas Legacy, we blend refined design with luxurious fabrics to create skirts that move with grace and confidence.
+                               From classic pencil cuts to flowing A-lines, each piece is made-to-measure with meticulous attention to detail, ensuring timeless elegance with every wear.
+                        </p>
+                    
+          
+                    {/* Button */}
+                    <div className="w-fit">
+                        <button className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
+                          Book an Appointment →
+                        </button>
+                        <div className="mt-2 border-b border-white w-full"></div>
+                    </div>
+                  </div>
+          
+                  {/* Right Image */}
+                  <div className="w-full md:w-1/2 h-80 md:h-full overflow-hidden">
+                    <img
+                      src={img8}
+                      alt="Fabric Patterns"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+          
+          
+
+
+
+
+
 
 
       
@@ -171,6 +262,42 @@ const WomenPage = () => {
                 </div>
 
 
+
+
+
+         {/* Collaboration and Experience Section */}
+                 <div className="flex flex-col md:flex-row w-full h-auto md:h-[100vh] bg-[#1c2331] text-white">
+                  {/* Left Text Content */}
+                  <div className="w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center bg-gradient-to-b from-[#1c2331] to-[#1c2331]">
+                    <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
+                    Signature Styles. Designed for You.                    </h2>
+                    <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
+                      Rooted in tradition and refined for the modern woman, our bespoke suits embody the perfect balance between heritage and innovation. 
+                      At Lebas Legacy, every stitch tells a story—crafted for comfort, confidence, and an enduring sense of style.
+
+
+                      </p>
+                    
+          
+                    {/* Button */}
+                    <div className="w-fit">
+                        <button className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
+                          Book an Appointment →
+                        </button>
+                        <div className="mt-2 border-b border-white w-full"></div>
+                    </div>
+                  </div>
+          
+                  {/* Right Image */}
+                  <div className="w-full md:w-1/2 h-80 md:h-full overflow-hidden">
+                    <img
+                      src={img9}
+                      alt="Fabric Patterns"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+          
 
 
 
