@@ -74,10 +74,19 @@ const Header2 = () => {
               </div>
             </div>
 
-            {/* Hamburger - Mobile Only */}
-            <div className="md:hidden text-xl cursor-pointer" onClick={toggleMenu}>
-              {isMenuOpen ? <FaTimes /> : <FaBars />}
-            </div>
+        
+            {/* Hamburger + Mobile Logo */}
+<div className="md:hidden flex items-center space-x-4">
+  <div className="text-xl cursor-pointer" onClick={toggleMenu}>
+    {isMenuOpen ? <FaTimes /> : <FaBars />}
+  </div>
+  <div className="w-[350px] flex justify-center ml-2">
+    <img src={img5} alt="Libas Legacy Logo" className="w-full h-auto object-contain" />
+  </div>
+</div>
+
+
+
           </div>
 
           {/* Mobile Menu */}

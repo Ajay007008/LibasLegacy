@@ -34,8 +34,7 @@ const ContactInfo = () => {
         <div className="space-y-2 text-sm sm:text-base tracking-wider">
           <h4 className="text-md font-serif font-bold text-gray-900 mb-3">QUICK LINKS</h4>
           <Link to="/about" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">ABOUT US</Link>
-          <Link to="/contact" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">CONTACT US</Link>
-          <Link to="/terms" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">TERMS</Link>
+          <a href="tel:+971543191992" className="hover:underline block" aria-label="Call Now">CONTACT US</a>          <Link to="/terms" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">TERMS</Link>
           <Link to="/privacy" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">PRIVACY</Link>
           <Link to="/refund" onClick={() => window.scrollTo(0, 0)} className="hover:underline block">REFUND POLICY</Link>
         </div>
