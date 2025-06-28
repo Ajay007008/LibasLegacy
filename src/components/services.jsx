@@ -74,7 +74,7 @@ const Services = () => {
             />
 
             {/* Description */}
-            <p className="text-md text-[#B29277] leading-relaxed">{step.description}</p>
+            <p className="text-md text-[#002b36] leading-relaxed">{step.description}</p>
           </div>
         ))}
       </div>
@@ -83,13 +83,13 @@ const Services = () => {
 
       {/* Culture Section */}
       <div className="mt-11">
-        <p className="text-sm text-[#B29277] tracking-[0.2em] mb-2">THE CULTURE</p>
+        <p className="text-sm text-[#002b36] tracking-[0.2em] mb-2">THE CULTURE</p>
         <h2 className="text-4xl font-serif text-[#002B36] mb-6">HOW WE PURSUE PERFECTION</h2>
 
         {/* Divider with scissors */}
         <div className="flex justify-center items-center mb-10">
-          <div className="border-t border-dashed border-[#B29277] w-48" />
-          <FaScissors className="mx-4 text-[#B29277]" />
+          <div className="border-t border-dashed border-[#002b36] w-48" />
+          <FaScissors className="mx-4 text-[#002b36]" />
           <div className="border-t border-dashed border-[#B29277] w-48" />
         </div>
 
@@ -100,7 +100,7 @@ const Services = () => {
               <div className="w-16 h-16 border-2 border-[#29494C] rounded-full flex items-center justify-center mb-4">
                 {item.icon}
               </div>
-              <p className="text-[#B29277] text-sm tracking-[0.2em] font-semibold">{item.label}</p>
+              <p className="text-[#002b36] text-sm tracking-[0.2em] font-semibold">{item.label}</p>
             </div>
           ))}
         </div>

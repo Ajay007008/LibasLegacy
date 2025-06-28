@@ -16,6 +16,10 @@ import Terms from './components/footerPage/terms.jsx';
 
 
 
+import BookAppointment from "./components/bookAppointment.jsx";
+
+
+
 // CallButton and Whatsapp
 import CallNowButton from './components/callButton.jsx'
 import WhatsAppButton from './components/whatsappButton.jsx'
@@ -80,7 +84,13 @@ function App() {
         <Route path="/alteration" element={<AlterationPage />} />
         <Route path="/tuxedos" element={<TuxedosPage />} />
           <Route path="/fabric" element={<FabricPage />} />
+
+
           <Route path="/about" element={<AboutUs/>} />
+          <Route path="/book" element={<BookAppointment />} />
+
+
+
           <Route path="/contact" element={<ContactUs/>} />
           <Route path="/privacy" element={<Privacy/>} />
           <Route path="/refund" element={<Refund/>} />

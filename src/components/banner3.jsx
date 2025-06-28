@@ -3,9 +3,9 @@ import img1 from '../assets/banner3/img1.webp';
 import img2 from '../assets/banner3/img2.webp';
 import img3 from '../assets/banner3/img3.webp';
 
-import img4 from '../assets/banner3/img4.avif';
-import img5 from '../assets/banner3/img7.jpg';
-import img6 from '../assets/banner3/img8.jpg';
+import img4 from '../assets/banner3/img4.jpg';
+import img5 from '../assets/banner3/img7a.png';
+import img6 from '../assets/banner3/img8a.png';
 
 
 
@@ -22,10 +22,10 @@ const Banner3 = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid md:grid-cols-3 gap-8 items-stretch">
+      <div className="grid md:grid-cols-3 gap-6 items-stretch">
         {/* Card 1 */}
         <div className="flex flex-col h-full">
-          <img src={img4} alt="Mens Bespoke Suits" className="w-full h-[450px] object-contain" />
+          <img src={img4} alt="Mens Bespoke Suits" className="w-full h-[550px] object-contain" />
           <div className="flex flex-col flex-grow mt-6">
             <h3 className="text-lg font-medium mb-2">Mens Bespoke Suits</h3>
             <p className="text-sm text-gray-600 mb-4 flex-grow">
@@ -39,7 +39,7 @@ const Banner3 = () => {
 
         {/* Card 2 */}
         <div className="flex flex-col h-full">
-          <img src={img5} alt="Ladies Bespoke Suits" className="w-full h-[450px] object-contain" />
+          <img src={img5} alt="Ladies Bespoke Suits" className="w-full h-[550px] object-contain" />
           <div className="flex flex-col flex-grow mt-6">
             <h3 className="text-lg font-medium mb-2">Ladies Bespoke Suits</h3>
             <p className="text-sm text-gray-600 mb-4 flex-grow">
@@ -53,7 +53,7 @@ const Banner3 = () => {
 
         {/* Card 3 */}
         <div className="flex flex-col h-full">
-          <img src={img6} alt="Remote Suit Service" className="w-full h-[450px] object-contain" />
+          <img src={img6} alt="Remote Suit Service" className="w-full h-[550px] object-contain" />
           <div className="flex flex-col flex-grow mt-6">
             <h3 className="text-lg font-medium mb-2">Remote Suit Service</h3>
             <p className="text-sm text-gray-600 mb-4 flex-grow">

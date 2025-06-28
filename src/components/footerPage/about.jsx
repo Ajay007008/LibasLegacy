@@ -1,10 +1,11 @@
 import React from 'react';
 import img1 from './about/img1.avif';   // background for About Us
-import img2 from './about/img2.jpg';    // image of founders for Our History
-import img3 from './about/img3.jpg';    // image for Our Team section
-import img4 from './about/img4.jpg';    // first team member
-import img5 from './about/img5.jpg';    // second team member
-import img6 from './about/img6.jpg';    // third team member
+import img2 from './about/img2.jpg';    
+import img3a from './about/img3a.avif';    // image for Our Team section
+
+import { Link } from "react-router-dom";
+
+
 
 const About = () => {
   return (
@@ -20,15 +21,21 @@ const About = () => {
           <div className="text-white max-w-2xl text-left">
             <h2 className="text-5xl font-serif mb-6">About Us</h2>
 
-            <p className="text-lg leading-relaxed mb-8">
-              Founded on a passion for impeccable tailoring, Lebas Legacy<br />
-              blends traditional British tailoring with contemporary flair, crafting<br />
-              bespoke suits that are sure to leave a lasting impression.
-            </p>
+                  <p className="text-lg leading-relaxed mb-8">
+                    At Lebas Legacy, every garment tells a story of heritage<br/> and elegance.
+                    Our master tailors blend time-honored techniques<br /> with innovative design,
+                    creating bespoke suits that redefine<br /> sophistication and celebrate your unique style.
+                  </p>
 
-            <button className="bg-[#1c2331] text-white px-8 py-3 tracking-widest text-sm hover:bg-[#1e1933] transition duration-300">
+        
+
+      <Link
+              to="/book"
+              className="bg-[#1c2331] text-white px-8 py-3 tracking-widest text-sm hover:bg-[#1e1933] transition duration-300"
+            >
               BOOK YOUR APPOINTMENT
-            </button>
+            </Link>
+
           </div>
         </div>
       </section>
@@ -39,50 +46,55 @@ const About = () => {
           <img
             src={img2}
             alt="Founders"
-            className="object-cover w-full h-full"
+            className="object-top w-full h-full"
           />
         </div>
+
+
         <div className="md:w-1/2 bg-[#1c2331] text-white flex items-center p-8 md:p-16">
           <div>
             <h2 className="text-4xl font-serif mb-6">Our History</h2>
-            <p className="text-lg leading-relaxed mb-4">
-             In 2017, the founders of Lebas Legacy came together with one key<br />
-              focus in mind. Identifying a clear gap in the region for a premium<br />
-              bespoke product with an exceptional level of service, they set out<br />
-              to transform the way you experience tailoring in the UK.
-            </p>
+                <p className="text-lg leading-relaxed mb-4">
+                        Established in 2015, Lebas Legacy was founded in Dubai with a vision<br />
+                        to elevate bespoke tailoring across the region. Recognizing a need for<br />
+                        a truly personalized and luxurious experience, the founders set out<br />
+                        to craft garments that celebrate both heritage and contemporary style.
+                      </p>
             <p className="text-lg leading-relaxed">
-              Since then, the brand has been committed to providing the<br />
-              highest quality of tailored garments, which combine traditional<br />
-              craftsmanship with a modern, sartorial twist.
-            </p>
+                    Since then, the brand has remained dedicated to delivering<br />
+                    the finest tailored garments, blending timeless craftsmanship<br />
+                    with contemporary design for the modern gentleman.
+                  </p>
           </div>
         </div>
       </section>
+
+
+
 
       {/* OUR TEAM SECTION */}
       <section className="flex flex-col md:flex-row">
         <div className="md:w-1/2 bg-[#1c2331] text-white flex items-center p-8 md:p-16">
           <div>
             <h2 className="text-4xl font-serif mb-6">Our Team</h2>
-            <p className="text-lg leading-relaxed mb-4">
-              With a wide variety of backgrounds and skill sets, the team at
-              Lebas Legacy is a group of dedicated professionals who are
-              committed to providing each client with an exceptional level
-              of service and support throughout their tailoring journey.
-            </p>
+                <p className="text-lg leading-relaxed mb-4">
+                    Bringing together diverse backgrounds and exceptional skills, the team at<br />
+                    Lebas Legacy consists of dedicated professionals who are committed<br />
+                    to delivering an unparalleled level of service and support<br />
+                    throughout every step of the bespoke tailoring journey.
+                  </p>
             <p className="text-lg leading-relaxed">
-              We take the time to listen to our customers, answer their
-              questions, and provide guidance and support throughout the
-              entire tailoring process. Whether you’re a first-time customer
-              or a long-time client, our team is here to help you find the
-              perfect outfit for any event.
-            </p>
+                    We take the time to truly listen to our clients, addressing their questions<br />
+                    and offering expert guidance and support at every stage of the tailoring process.<br />
+                    Whether you are visiting us for the first time or returning as a valued client,<br />
+                    our team is dedicated to helping you discover the perfect ensemble for any occasion.
+                  </p>
+
           </div>
         </div>
         <div className="md:w-1/2 h-[600px]">
           <img
-            src={img3}
+            src={img3a}
             alt="Our Team"
             className="object-cover w-full h-full"
           />
@@ -92,40 +104,7 @@ const About = () => {
    
 
 
-         {/* MEET THE TEAM SECTION */}
-      <section className="flex flex-col md:flex-row h-[600px] bg-white">
-        {/* Left Text */}
-        <div className="md:w-1/3 flex items-center justify-center p-8">
-          <h2 className="text-4xl md:text-5xl font-serif text-[#2F254D] leading-tight text-center md:text-left">
-            Meet The<br />Team
-          </h2>
-        </div>
-
-        {/* Right Images */}
-        <div className="md:w-2/3 flex flex-row justify-center items-center">
-          <div className="w-1/3 h-full">
-            <img
-              src={img4}
-              alt="Team Member 1"
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <div className="w-1/3 h-full">
-            <img
-              src={img5}
-              alt="Team Member 2"
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <div className="w-1/3 h-full">
-            <img
-              src={img6}
-              alt="Team Member 3"
-              className="object-cover w-full h-full"
-            />
-          </div>
-        </div>
-      </section>
+      
 
 
 
