@@ -3,7 +3,7 @@ import img1 from '../assets/banner3/img1.webp';
 import img2 from '../assets/banner3/img2.webp';
 import img3 from '../assets/banner3/img3.webp';
 
-import img4 from '../assets/banner3/img4.jpg';
+import img4 from '../assets/banner3/img4b.jpg';
 import img5 from '../assets/banner3/img7a.png';
 import img6 from '../assets/banner3/img8a.png';
 

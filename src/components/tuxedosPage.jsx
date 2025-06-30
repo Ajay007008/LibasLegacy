@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import video1 from '../assets/texudoPage/video1.mp4';
 import video2 from '../assets/texudoPage/video2.mp4';
 import video3 from '../assets/texudoPage/video3.mp4';
@@ -29,7 +30,7 @@ const TuxedosPage = () => {
 
       {/* Section 1 – Video2 */}
       <div className="flex flex-col md:flex-row w-full bg-[#1c2331] text-white">
-        <div className="w-full md:w-1/2 h-80 md:h-[90vh] overflow-hidden">
+        <div className="order-1 md:order-1 w-full md:w-1/2 h-80 md:h-[90vh] overflow-hidden">
           <video
             src={video2}
             autoPlay
@@ -39,7 +40,7 @@ const TuxedosPage = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
+        <div className="order-2 md:order-2 w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
           <h2 className="text-3xl md:text-2xl font-serif font-medium mb-6">
             The Pinnacle of Formal Elegance
           </h2>
@@ -49,9 +50,11 @@ const TuxedosPage = () => {
             every piece is a statement of grace and power.
           </p>
           <div className="w-fit">
-            <button className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
-              Book an Appointment →
-            </button>
+            <Link to="/book">
+              <button className="uppercase cursor-pointer text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
+                Book an Appointment →
+              </button>
+            </Link>
             <div className="mt-2 border-b border-white w-full"></div>
           </div>
         </div>
@@ -59,7 +62,7 @@ const TuxedosPage = () => {
 
       {/* Section 2 – Video3 */}
       <div className="flex flex-col md:flex-row w-full bg-[#1c2331] text-white">
-        <div className="w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
+        <div className="order-2 md:order-1 w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
             Redefined Black-Tie Tailoring
           </h2>
@@ -69,13 +72,15 @@ const TuxedosPage = () => {
             confidently and command attention with every step.
           </p>
           <div className="w-fit">
-            <button className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
-              Book an Appointment →
-            </button>
+            <Link to="/book">
+              <button className="uppercase cursor-pointer text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
+                Book an Appointment →
+              </button>
+            </Link>
             <div className="mt-2 border-b border-white w-full"></div>
           </div>
         </div>
-        <div className="w-full md:w-1/2 h-80 md:h-[100vh] overflow-hidden">
+        <div className="order-1 md:order-2 w-full md:w-1/2 h-80 md:h-[100vh] overflow-hidden">
           <video
             src={video3}
             autoPlay
@@ -89,7 +94,7 @@ const TuxedosPage = () => {
 
       {/* Section 3 – Video4 */}
       <div className="flex flex-col md:flex-row w-full bg-[#1c2331] text-white">
-        <div className="w-full md:w-1/2 h-80 md:h-[100vh] overflow-hidden">
+        <div className="order-1 md:order-1 w-full md:w-1/2 h-80 md:h-[100vh] overflow-hidden">
           <video
             src={video4}
             autoPlay
@@ -99,7 +104,7 @@ const TuxedosPage = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
+        <div className="order-2 md:order-2 w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
           <h2 className="text-3xl md:text-2xl font-serif font-medium mb-6">
             Crafted for Ceremony. Designed for You.
           </h2>
@@ -110,9 +115,11 @@ const TuxedosPage = () => {
             you don’t just show up — you arrive.
           </p>
           <div className="w-fit">
-            <button className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
-              Book an Appointment →
-            </button>
+            <Link to="/book">
+              <button className="uppercase cursor-pointer text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
+                Book an Appointment →
+              </button>
+            </Link>
             <div className="mt-2 border-b border-white w-full"></div>
           </div>
         </div>

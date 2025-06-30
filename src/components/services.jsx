@@ -12,21 +12,21 @@ const processSteps = [
     icon: <FaRulerCombined size={32} className="text-white" />,
     image: img1,
     description:
-      'Visit our store or book an appointment and our tailoring consultant will visit you at your preferred place to take your measurements, choose the fabric, model and note your custom requirements.',
+      'You can visit our showroom, or simply schedule an appointment and have our tailoring expert come to you. We’ll take your measurements, help you select fabrics and styles, and note down every detail to create your perfect custom piece.',
   },
   {
     title: 'ADJUSTMENTS',
     icon: <FaScissors size={32} className="text-white" />,
     image: img2,
     description:
-      'You will try on the skeleton of your suit for the first time. It is not fully constructed. Instead, it is basted together to allow us to mould the suit to you before it is completed.',
+      'At this stage, you’ll try on the unfinished framework of your suit. It’s loosely basted rather than fully stitched, giving us the flexibility to adjust and shape it perfectly to your body before completing the final construction.',
   },
   {
     title: 'READY TO GO',
     icon: <FaUserTie size={32} className="text-white" />,
     image: img3,
     description:
-      'You will try on your fully constructed suit for the first time. Your tailoring consultant will assess whether the suit needs any alterations. If your suit doesn’t need alterations, you may take it home.',
+      'You will have your first fitting with the fully finished suit. Our tailoring consultant will check if any adjustments are needed. If no alterations are required, you can take your suit home the same day — all within 24 hours.',
   },
 ];
 

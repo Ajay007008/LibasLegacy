@@ -21,7 +21,7 @@ const BookAppointment = () => {
   const handleSubmit = () => {
     const { name, email, telephone, location, department, comment } = formData;
 
-    const whatsappNumber = "918604170358";
+    const whatsappNumber = "+971543191992";
 
     const message = `New Appointment Details:
 Name: ${name}
@@ -102,6 +102,7 @@ Comment: ${comment}`;
             className="w-full p-2 text-white bg-transparent border border-white"
             rows={4}
           ></textarea>
+
           <button
             onClick={handleSubmit}
             className="w-full bg-yellow-600 text-white py-3 uppercase tracking-wider hover:bg-yellow-700 transition"

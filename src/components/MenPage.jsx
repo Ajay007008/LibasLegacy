@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img1 from '../assets/MenPage/img1.webp';
 import img2 from '../assets/MenPage/img5.webp';
-import img4 from '../assets/MenPage/img4b.JPG';
-
 import img3 from '../assets/MenPage/img4.webp';
+import img4 from '../assets/MenPage/img4b.JPG';
 import img5 from '../assets/MenPage/img5.webp';
 import img6 from '../assets/MenPage/img6.webp';
 
@@ -45,23 +45,19 @@ const MenPage = () => {
         ))}
       </div>
 
-
-      
-
       {/* Legas Legacy' Reputation Section */}
-      <div className="flex flex-col md:flex-row w-full h-auto md:h-[90vh] bg-[#1c2331] text-white">
+      <div className="flex flex-col md:flex-row w-full bg-[#1c2331] text-white">
         {/* Left Image */}
-        <div className="w-full md:w-1/2 h-80 md:h-full overflow-hidden">
+        <div className="order-1 md:order-1 w-full md:w-1/2 h-80 md:h-[90vh] overflow-hidden">
           <img
             src={img4}
             alt="Tailored Suit In Progress"
-            className="w-full h-full object-cover scale" 
+            className="w-full h-full object-cover"
           />
         </div>
 
-
         {/* Right Text Content */}
-        <div className="w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center bg-gradient-to-b from-[#1c2331] to-[#1c2331]">
+        <div className="order-2 md:order-2 w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
             Legas &amp; Legacy' Reputation:
           </h2>
@@ -71,25 +67,22 @@ const MenPage = () => {
           <p className="text-sm md:text-base text-gray-300 mb-8 leading-relaxed">
             It is the unique relationship between our customers, cutters and tailors that drives our craft forward, and from which our reputation has been built. This consistency is achieved by the passing down of knowledge from our experienced tailors in our workshop and constantly perfecting the process of bespoke tailoring while being alert to the requirements and wishes of our customers.
           </p>
-
-          {/* Button */}
           <div className="w-fit">
-              <button className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
-                Book an Appointment →
-              </button>
-              <div className="mt-2 border-b border-white w-full"></div>
+            <Link
+              to="/book"
+              className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300"
+            >
+              Book an Appointment →
+            </Link>
+            <div className="mt-2 border-b border-white w-full"></div>
           </div>
         </div>
       </div>
 
-
-
-
-
-       {/* Collaboration and Experience Section */}
-       <div className="flex flex-col md:flex-row w-full h-auto md:h-[100vh] bg-[#1c2331] text-white">
+      {/* Collaboration and Experience Section */}
+      <div className="flex flex-col md:flex-row w-full bg-[#1c2331] text-white">
         {/* Left Text Content */}
-        <div className="w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center bg-gradient-to-b from-[#1c2331] to-[#1c2331]">
+        <div className="order-2 md:order-1 w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
             Collaboration and Experience:
           </h2>
@@ -103,18 +96,19 @@ const MenPage = () => {
           <p className="text-sm md:text-base text-gray-300 mb-8 leading-relaxed">
             The cutter will then create a personal paper pattern by hand, from which the cloth will be struck. This is passed on to the tailor who’ll start to construct the garments with the required fittings needed to complete the first commission. The pattern is updated after each fitting to ensure accuracy; it also means that subsequent orders will require fewer fittings.
           </p>
-
-          {/* Button */}
           <div className="w-fit">
-              <button className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
-                Book an Appointment →
-              </button>
-              <div className="mt-2 border-b border-white w-full"></div>
+            <Link
+              to="/book"
+              className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300"
+            >
+              Book an Appointment →
+            </Link>
+            <div className="mt-2 border-b border-white w-full"></div>
           </div>
         </div>
 
         {/* Right Image */}
-        <div className="w-full md:w-1/2 h-80 md:h-full overflow-hidden">
+        <div className="order-1 md:order-2 w-full md:w-1/2 h-80 md:h-[100vh] overflow-hidden">
           <img
             src={img5}
             alt="Fabric Patterns"
@@ -123,14 +117,10 @@ const MenPage = () => {
         </div>
       </div>
 
-
-
-
-
-            {/* Attention to Details and Heritage Section */}
-            <div className="flex flex-col md:flex-row w-full h-auto md:h-[100vh] bg-[#1c2331] text-white">
+      {/* Attention to Details and Heritage Section */}
+      <div className="flex flex-col md:flex-row w-full bg-[#1c2331] text-white">
         {/* Left Image */}
-        <div className="w-full md:w-1/2 h-80 md:h-full overflow-hidden">
+        <div className="order-1 md:order-1 w-full md:w-1/2 h-80 md:h-[100vh] overflow-hidden">
           <img
             src={img6}
             alt="Tailor Details Closeup"
@@ -139,7 +129,7 @@ const MenPage = () => {
         </div>
 
         {/* Right Text Content */}
-        <div className="w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center bg-gradient-to-b from-[#1c2331] to-[#1c2331]">
+        <div className="order-2 md:order-2 w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
             Attention to Details and Heritage:
           </h2>
@@ -149,29 +139,17 @@ const MenPage = () => {
           <p className="text-sm md:text-base text-gray-300 mb-8 leading-relaxed">
             From the measuring of the body, the design of a garment, how the pattern is created, to choices of cloth and construction. The tailor will mould and sculpt the cloth by shrinking, stretching, using multiple sewing techniques to create a unique three-dimensional garment, which is finished by an expert hand with the smallest most delicate but durable silk thread hand finishing.
           </p>
-
-          {/* Button */}
           <div className="w-fit">
-              <button className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300">
-                Book an Appointment →
-              </button>
-              <div className="mt-2 border-b border-white w-full"></div>
+            <Link
+              to="/book"
+              className="uppercase text-xs tracking-widest hover:text-[#D0A85C] transition duration-300"
+            >
+              Book an Appointment →
+            </Link>
+            <div className="mt-2 border-b border-white w-full"></div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   );
 };
