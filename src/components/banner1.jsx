@@ -53,9 +53,9 @@ const goToWomenPage = () => {
 
       {/* Vertical Button */}
       <div className="absolute top-1/2 right-0 transform -translate-y-1/2 rotate-90 origin-top-right z-20">
-        <button className="bg-[#820D23] text-white px-4 py-2 tracking-widest text-sm">
+       <a href="tel:+971543191992" className="bg-[#820D23] text-white px-4 py-2 tracking-widest text-sm inline-block">
           CONTACT US
-        </button>
+        </a>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ const AlterationPage = () => {
             Redefining Fit
           </h1>
           <p className="text-sm md:text-base text-gray-200 italic mt-1">
-            Because Every Inch Matters at Legas Legacy
+            Because Every Inch Matters at Lebas Legacy
           </p>
         </div>
       </div>

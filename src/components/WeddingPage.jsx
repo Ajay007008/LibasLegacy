@@ -35,7 +35,7 @@ const WeddingPage = () => {
           </h2>
           <p className="text-sm md:text-base text-gray-300 mb-8 leading-relaxed">
             Your wedding suit is the most important suit that you will ever wear, which is why you need to feel
-            comfortable and look stylish in it. At Legas Legacy, we have a wide selection of wedding suit ideas for you
+            comfortable and look stylish in it. At Lebas Legacy, we have a wide selection of wedding suit ideas for you
             to choose from, whether you are the main man of the hour or a guest of honour. Discover sharply cut wedding
             suits in various styles, fabrics and colours to suit you and your wedding party at Legas Legacy.
           </p>
@@ -59,7 +59,7 @@ const WeddingPage = () => {
             Bespoke Wedding Attire
           </h2>
           <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
-            Whether it’s a traditional morning dress, a formal lounge suit or something more colourful, Legas Legacy
+            Whether it’s a traditional morning dress, a formal lounge suit or something more colourful, Lebas Legacy
             makes bespoke wedding suits in keeping with a customer’s style to make sure they look their absolute best
             on the big day.
           </p>

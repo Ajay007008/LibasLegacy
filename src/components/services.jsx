@@ -8,21 +8,21 @@ import img3 from '../assets/services/img6.png';
 
 const processSteps = [
   {
-    title: 'MEASUREMENT',
+    title: ' MEASUREMENT & DESIGN',
     icon: <FaRulerCombined size={32} className="text-white" />,
     image: img1,
     description:
       'You can visit our showroom, or simply schedule an appointment and have our tailoring expert come to you. We’ll take your measurements, help you select fabrics and styles, and note down every detail to create your perfect custom piece.',
   },
   {
-    title: 'ADJUSTMENTS',
+    title: 'FITTING & REFINEMENT',
     icon: <FaScissors size={32} className="text-white" />,
     image: img2,
     description:
       'At this stage, you’ll try on the unfinished framework of your suit. It’s loosely basted rather than fully stitched, giving us the flexibility to adjust and shape it perfectly to your body before completing the final construction.',
   },
   {
-    title: 'READY TO GO',
+    title: ' FINAL FIT & DELIVERY',
     icon: <FaUserTie size={32} className="text-white" />,
     image: img3,
     description:
@@ -33,22 +33,22 @@ const processSteps = [
 const coreValues = [
   {
     icon: <FaHandshake size={30} className="text-[#29494C]" />,
-    label: 'TRUST',
+    label: ' Assurance',
   },
   {
     icon: <FaScissors size={30} className="text-[#29494C]" />,
-    label: 'EXPERTISE',
+    label: 'Craftsmanship',
   },
   {
     icon: <FaCheck size={30} className="text-[#29494C]" />,
-    label: 'PERFECTION',
+    label: 'Excellence',
   },
 ];
 
 const Services = () => {
   return (
     <section className="bg-white py-5 px-4 md:px-12 text-center">
-      <h2 className="text-4xl font-serif text-[#002B36] mb-12 tracking-wide">OUR PROCESS</h2>
+      <h2 className="text-4xl font-serif text-[#002B36] mb-12 tracking-wide">OUR BESPOKE JOURNEY</h2>
 
       {/* Process Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto">
@@ -83,8 +83,8 @@ const Services = () => {
 
       {/* Culture Section */}
       <div className="mt-11">
-        <p className="text-sm text-[#002b36] tracking-[0.2em] mb-2">THE CULTURE</p>
-        <h2 className="text-4xl font-serif text-[#002B36] mb-6">HOW WE PURSUE PERFECTION</h2>
+        <p className="text-sm text-[#002b36] tracking-[0.2em] mb-2">OUR LEGACY</p>
+        <h2 className="text-4xl font-serif text-[#002B36] mb-6">Every Detail Considered Every Stitch Elevated</h2>
 
         {/* Divider with scissors */}
         <div className="flex justify-center items-center mb-10">

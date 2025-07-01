@@ -1,7 +1,7 @@
 import React from 'react';
 import img1 from './about/img1.avif';   // background for About Us
 import img2 from './about/img2.jpg';    
-import img3a from './about/img3a.avif';    // image for Our Team section
+import img3a from './about/img3.png';    // image for Our Team section
 
 import { Link } from "react-router-dom";
 
@@ -40,34 +40,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* OUR HISTORY SECTION */}
-      <section className="flex flex-col md:flex-row">
-        <div className="md:w-1/2 h-[600px]">
-          <img
-            src={img2}
-            alt="Founders"
-            className="object-top w-full h-full"
-          />
-        </div>
-
-
-        <div className="md:w-1/2 bg-[#1c2331] text-white flex items-center p-8 md:p-16">
-          <div>
-            <h2 className="text-4xl font-serif mb-6">Our History</h2>
-                <p className="text-lg leading-relaxed mb-4">
-                        Established in 2015, Lebas Legacy was founded in Dubai with a vision<br />
-                        to elevate bespoke tailoring across the region. Recognizing a need for<br />
-                        a truly personalized and luxurious experience, the founders set out<br />
-                        to craft garments that celebrate both heritage and contemporary style.
-                      </p>
-            <p className="text-lg leading-relaxed">
-                    Since then, the brand has remained dedicated to delivering<br />
-                    the finest tailored garments, blending timeless craftsmanship<br />
-                    with contemporary design for the modern gentleman.
-                  </p>
-          </div>
-        </div>
-      </section>
+     
 
 
 

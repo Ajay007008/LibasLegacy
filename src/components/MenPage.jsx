@@ -11,7 +11,7 @@ const MenPage = () => {
   const data = [
     {
       img: img1,
-      text: `This peacoat is inspired by 'Legas Legacy' history as a tailor to the Royal Navy, but nonetheless looks modern and clean. With its rounded barrel silhouette, stand-and-fall collar and side slip pockets it feels tailored yet casual.`,
+      text: `This peacoat is inspired by 'Lebas Legacy' history as a tailor to the Royal Navy, but nonetheless looks modern and clean. With its rounded barrel silhouette, stand-and-fall collar and side slip pockets it feels tailored yet casual.`,
     },
     {
       img: img2,
@@ -59,7 +59,7 @@ const MenPage = () => {
         {/* Right Text Content */}
         <div className="order-2 md:order-2 w-full md:w-1/2 px-8 py-12 md:px-16 md:py-24 flex flex-col justify-center">
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
-            Legas &amp; Legacy' Reputation:
+            Lebas &amp; Legacy' Reputation:
           </h2>
           <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
             Our aim is to maintain the highest standards, from the hand-crafted quality of the tailoring, the individual cut and fit, to the timeless style and design.
@@ -87,7 +87,7 @@ const MenPage = () => {
             Collaboration and Experience:
           </h2>
           <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
-            The bespoke department is situated in-house at our flagship shop at No.1 Savile Row.
+            The bespoke department is situated in-house at our flagship shop.
             Customers are met by their cutter, who’ll guide them through cloth choices, design of garments and take measurements.
           </p>
           <p className="text-sm md:text-base text-gray-300 mb-4 leading-relaxed">
