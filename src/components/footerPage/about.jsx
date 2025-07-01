@@ -1,7 +1,7 @@
 import React from 'react';
 import img1 from './about/img1.avif';   // background for About Us
 import img2 from './about/img2.jpg';    
-import img3a from './about/img3.png';    // image for Our Team section
+import img3a from './about/img3.jpg';    // image for Our Team section
 
 import { Link } from "react-router-dom";
 
