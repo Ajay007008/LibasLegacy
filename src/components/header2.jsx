@@ -80,7 +80,7 @@ const Header2 = () => {
   <div className="text-xl cursor-pointer" onClick={toggleMenu}>
     {isMenuOpen ? <FaTimes /> : <FaBars />}
   </div>
-  <div className="w-[350px] flex justify-center ml-2">
+  <div className="w-[350px] flex justify-center ">
     <img src={img5} alt="Libas Legacy Logo" className="w-full h-auto object-contain" />
   </div>
 </div>
